@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+#theme-container {
+  text-align: center;
+}
+
+#user-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
