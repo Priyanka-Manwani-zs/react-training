@@ -1,0 +1,31 @@
+.counter {
+  height: 700px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin-top: 100px;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+
+.doubleClickButton button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  border: none;
+  z-index: 1000; /* Ensure it stays on top */
+  cursor: pointer;
+}

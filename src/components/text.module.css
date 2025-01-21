@@ -1,0 +1,9 @@
+.msg {
+  height: 100vh;
+  width: 100%;
+  background-color: blueviolet;
+}
+
+.msg p {
+  color: aquamarine;
+}
