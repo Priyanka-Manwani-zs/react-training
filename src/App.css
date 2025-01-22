@@ -7,3 +7,31 @@
   text-align: center;
   height: 100%;
 }
+
+.acc-maindiv {
+  width: 500px;
+  background-color: beige;
+}
+.acc-maindiv div {
+  border: 2px solid;
+  margin-top: 30px;
+  border-radius: 7px;
+  width: 50%;
+}
+p {
+  padding-left: 10px;
+}
+
+.accordion-icon {
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  height: 8px;
+  pointer-events: none;
+  transform: translateY(-2px) rotate(45deg);
+  width: 8px;
+}
+
+.accordion-icon-rotated {
+  transform: translateY(2px) rotate(-135deg);
+}
