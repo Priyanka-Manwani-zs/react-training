@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./modal.css";
+import { IoIosCloseCircle } from "react-icons/io";
 
 function Modal({ show, onClose }) {
   if (!show) {
@@ -8,9 +9,7 @@ function Modal({ show, onClose }) {
   return (
     <div className="maindiv-modal">
       <div className="modal">
-        <span className="cross" onClick={onClose}>
-          X
-        </span>
+        <IoIosCloseCircle size={24} className="cross" onClick={onClose} />
         <p>Hello there</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus

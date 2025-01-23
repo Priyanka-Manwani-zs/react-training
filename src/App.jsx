@@ -7,6 +7,7 @@ import DelayCounter from "./usememo /usememo1";
 import Memo from "./usememo /usememo2";
 // import Counter from "./components/Counter";
 import React, { useState } from "react";
+import "./day_13/modal.css";
 
 // import Buttons from "./day_8/Buttons";
 // import Text from "./components/Text";
@@ -30,7 +31,7 @@ function App() {
   // return <DelayCounter />;
   // return <Memo />;
   return (
-    <div className="maindiv-modal">
+    <div className="outerDiv">
       <button onClick={openModal}>Click Me</button>
       <Modal show={showModal} onClose={closeModal} />
     </div>
