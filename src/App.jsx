@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="outerDiv">
       <button onClick={openModal}>Click Me</button>
-      <Modal show={showModal} onClose={closeModal} />
+      {showModal && <Modal onClose={closeModal} />}
     </div>
   );
   // return <Modal />;
