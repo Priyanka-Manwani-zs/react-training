@@ -2,6 +2,8 @@ import "./App.css";
 import Test2 from "./day_11/test2";
 import Counter from "./day_8/count";
 import SignForm from "./day_8/SignForm";
+import CounterDebouncing from "./react-practice/CounterDebouncing";
+import ProgressBars from "./react-practice/ProgressBars";
 import DelayCounter from "./usememo /usememo1";
 import Memo from "./usememo /usememo2";
 // import Counter from "./components/Counter";
@@ -14,11 +16,11 @@ function App() {
   // return <Buttons />;
   // return <Counter />;
   // return <SignForm />;
-  return <Test2 />;
+  // return <Test2 />;
   // return <DelayCounter />;
   // return <Memo />;
-
-  return;
+  // return <ProgressBars />;
+  return <CounterDebouncing />;
 }
 
 export default App;
