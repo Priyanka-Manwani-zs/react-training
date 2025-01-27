@@ -1,20 +1,14 @@
 import React, { createContext, useContext, useState } from "react";
 const Context = createContext();
 function ThemeContext({ children }) {
-  const colors = ["#ff5733", "#ecff33", "#104d42"];
-
-  const [bgcolor, setBgcolor] = useState(colors[0]);
+  const [bg, setBg] = useState("beige");
 
   function changebg() {
-    setBgcolor(
-      (prevBgColor) => colors[(colors.indexOf(prevBgColor) + 1) % colors.length]
-    );
+    setBg((prev) => (prev == "beige" ? "yellow " : "beige"));
   }
 
   return (
-    <Context.Provider value={{ bgcolor, changebg }}>
-      {children}
-    </Context.Provider>
+    <Context.Provider value={{ bg, changebg }}>{children}</Context.Provider>
   );
 }
 export { ThemeContext };
