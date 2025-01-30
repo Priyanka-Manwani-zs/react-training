@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
-const Context = createContext();
-function ThemeContext({ children }) {
+const Context2 = createContext();
+function ThemeContext2({ children }) {
   const [bg, setBg] = useState("beige");
 
   function changebg() {
@@ -8,8 +8,8 @@ function ThemeContext({ children }) {
   }
 
   return (
-    <Context.Provider value={{ bg, changebg }}>{children}</Context.Provider>
+    <Context2.Provider value={{ bg, changebg }}>{children}</Context2.Provider>
   );
 }
-export { ThemeContext };
-export default Context;
+export { ThemeContext2 };
+export default Context2;
