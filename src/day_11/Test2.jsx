@@ -44,12 +44,12 @@ const Test2 = () => {
       <button onClick={handleClick} className="btn">
         roll
       </button>
-      {/* <ChildComponent
+      <ChildComponent
         value={inputValue}
         showDice={showDice}
         showloader={loader}
-      /> */}
-      <SumOfDice value={inputValue} showDice={showDice} showloader={loader} />
+      />
+      {/* <SumOfDice value={inputValue} showDice={showDice} showloader={loader} /> */}
     </div>
   );
 };

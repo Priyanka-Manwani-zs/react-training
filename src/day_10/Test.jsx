@@ -1,7 +1,7 @@
 import React from "react";
 import "./Test.css";
 
-function form(props) {
+function Form(props) {
   return (
     <div className="maindiv">
       <img src={props.img} alt="no image" />
@@ -19,4 +19,4 @@ function form(props) {
   );
 }
 
-export default form;
+export default Form;
