@@ -1,0 +1,47 @@
+.maincontainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d93131;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  padding-top: 60px;
+  height: 700px;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 0px;
+  z-index: 0;
+}
+
+.box1 {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  border: 3px solid;
+}
+.box2 {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  border: 3px solid;
+}
+
+.box3 {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  border: 3px solid;
+}
+.box4 {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  border: 3px solid;
+}

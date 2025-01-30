@@ -24,11 +24,17 @@ import "./App.css";
 // import Memo from "./usememo /usememo2";
 
 import Counter from "./components/Counter";
-import React, { useState } from "react";
 
 // import ModalDisplay from "./day_13/ModalDisplay";
 
 import Display from "./components/Display";
+import Test2 from "./day_11/test2";
+import Parent from "./Day_15/Parent";
+import Counter from "./day_8/count";
+import SignForm from "./day_8/SignForm";
+import DelayCounter from "./usememo /usememo1";
+import Memo from "./usememo /usememo2";
+// import Counter from "./components/Counter";
 
 // import Buttons from "./day_8/Buttons";
 // import Button1 from "./day_11/button.jsx";
@@ -61,6 +67,7 @@ function App() {
   //     <AccordionDisplay />
   //   </>
   // );
+  // return <Parent />;
 }
 
 export default App;
