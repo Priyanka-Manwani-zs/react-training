@@ -19,7 +19,6 @@ import Memo from "./usememo /usememo2";
 // import DelayCounter from "./usememo /usememo1";
 // import Memo from "./usememo /usememo2";
 
-
 // import Counter from "./components/Counter";
 import React, { useState } from "react";
 
@@ -53,18 +52,16 @@ function App() {
   return <ModalDisplay />;
   // return <Modal />;
 
-
   // return <Test2 />;
   // return <DelayCounter />;
   // return <Memo />;
   // return <Form />;
 
-  return (
-    <>
-      <AccordionDisplay />
-    </>
-  );
-
+  // return (
+  //   <>
+  //     <AccordionDisplay />
+  //   </>
+  // );
 }
 
 export default App;
