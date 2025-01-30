@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "./App.css";
+import "./accordion.css";
 
 function Test(props) {
   const [show, setShow] = useState(false);

@@ -1,5 +1,6 @@
-import "./App.css";
-import Accordion from "./Accordion.jsx";
+// import "./App.css";
+
+import AccordionDisplay from "./Accordion/AccordionDisplay.jsx";
 // import Test2 from "./day_11/test2";
 // import Counter from "./day_8/count";
 // import SignForm from "./day_8/SignForm";
@@ -20,34 +21,10 @@ function App() {
   // // return <Memo />;
 
   // return;
-  const arr = [
-    {
-      title: "HTML",
-      content: `The HyperText Markup Language or HTML is the
-    standard markup language for documents designed to
-    be displayed in a web browser.`,
-    },
-    {
-      title: "CSS",
-      content: `Cascading Style Sheets is a style sheet language
-    used for describing the presentation of a document
-    written in a markup language such as HTML or XML.`,
-    },
-    {
-      title: "JS",
-      content: `JavaScript, often abbreviated as JS, is a
-    programming language that is one of the core
-    technolog`,
-    },
-  ];
 
   return (
     <>
-      <div className="acc-maindiv">
-        {arr.map((ele, key) => (
-          <Accordion title={ele.title} content={ele.content} />
-        ))}
-      </div>
+      <AccordionDisplay />
     </>
   );
 }
