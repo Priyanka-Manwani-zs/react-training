@@ -25,7 +25,7 @@
 
 // import Counter from "./components/Counter";
 
-// import ModalDisplay from "./day_13/ModalDisplay";
+import ModalDisplay from "./day_13/ModalDisplay";
 
 // import Display from "./components/Display";
 
@@ -56,7 +56,7 @@ function App() {
   // return <Counter />;
   // return <DelayCounter />;
   // return <Memo />;
-  // return <ModalDisplay />;
+  return <ModalDisplay />;
   // return <Form />;
   // return <Parent />;
   // return <DelayCounter />; //ue memo example

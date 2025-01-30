@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./modal.css";
 import { IoIosCloseCircle } from "react-icons/io";
 
 function Modal({ onClose }) {
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(onClose, 500);
+  };
   return (
     <>
       <div className="maindiv-modal">
-        <div className="modal">
-          <IoIosCloseCircle size={24} className="cross" onClick={onClose} />
+        <div className={`modal ${isClosing ? "exit" : ""}`}>
+          <IoIosCloseCircle size={24} className="cross" onClick={handleClose} />
           <p>Hello there</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
