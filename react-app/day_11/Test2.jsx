@@ -3,13 +3,10 @@ import React, { useState } from "react";
 import Button1 from "./button";
 import "./test2.css";
 import ChildComponent from "./ChildComponent";
-import SumOfDice from "./SumOfDice";
 
 const Test2 = () => {
   const [inputValue, setInputValue] = useState("");
   const [showEr, setShowEr] = useState(false);
-  const [showDice, setShowDice] = useState(false);
-  const [loader, setLoader] = useState(false);
 
   const handleChange = (e) => {
     if (e.target.value > 6) {
@@ -20,13 +17,10 @@ const Test2 = () => {
       setShowEr(false);
     }
   };
+  const [showDice, setShowDice] = useState(false);
 
   const handleClick = () => {
-    setLoader(true);
-    setTimeout(() => {
-      setShowDice(true);
-      setLoader(false);
-    }, 2000);
+    setShowDice(true);
   };
   return (
     <div className="parent">
@@ -44,12 +38,7 @@ const Test2 = () => {
       <button onClick={handleClick} className="btn">
         roll
       </button>
-      <ChildComponent
-        value={inputValue}
-        showDice={showDice}
-        showloader={loader}
-      />
-      {/* <SumOfDice value={inputValue} showDice={showDice} showloader={loader} /> */}
+      <ChildComponent value={inputValue} showDice={showDice} />
     </div>
   );
 };
