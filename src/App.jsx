@@ -1,4 +1,3 @@
-
 // import "./App.css";
 
 import AccordionDisplay from "./Accordion/AccordionDisplay.jsx";
@@ -14,16 +13,13 @@ import "./App.css";
 
 // import Counter from "./components/Counter";
 
-
 // import Display from "./components/Display";
-
 
 // import Buttons from "./day_8/Buttons";
 // import Text from "./components/Text";
 // import Test from "./day_10/Test";
 
 function App() {
-
   // // return <Buttons />;
   // // return <Counter />;
   // // return <SignForm />;
@@ -33,7 +29,7 @@ function App() {
 
   // return;
 
-  return <Buttons />;
+  // return <Buttons />;
   // return <Display />;
 
   // return <Counter />;
@@ -43,7 +39,6 @@ function App() {
   // return <DelayCounter />;
   // return <Memo />;
   // return <Form />;
-
 
   return (
     <>
