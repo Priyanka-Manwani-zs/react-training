@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useRef } from "react";
-import "./style.css";
+import "./ParentStyle.css";
 import ChildA from "./ChildA";
 import ChildB from "./ChildB.JSX";
 import ChildC from "./ChildC";
 import ChildD from "./ChildD";
-import Context from "../context/ThemeContext";
+import Context2 from "../context2/ThemeContext2";
 
 function Parent() {
-  const { bg, changebg } = useContext(Context);
+  const { bg, changebg } = useContext(Context2);
   const parentRef = useRef();
   const rootRef = useRef();
 
@@ -24,9 +24,9 @@ function Parent() {
 
   return (
     <>
-      <div className="maincontainer" ref={rootRef}>
+      <div className="Parentmaincontainer" ref={rootRef}>
         <button onClick={handleChange}>swtich</button>
-        <div className="main" ref={parentRef}>
+        <div className="newcontainer" ref={parentRef}>
           <ChildA />
           <ChildB />
           <ChildC />

@@ -11,6 +11,7 @@
 .acc-maindiv {
   width: 500px;
   background-color: beige;
+  color: black;
 }
 .acc-maindiv div {
   border: 2px solid;

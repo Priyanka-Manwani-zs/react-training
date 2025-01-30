@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import useWindow from "../day_9/UseWindow";
 import useIsMounted from "../day_9/UseIsMounted";
 import UseComponentSize from "../day_9/UseComponentSize";
+import "./signform.css";
 
 function SignForm() {
   const [name, setName] = useState(null);
@@ -68,7 +69,7 @@ function SignForm() {
   // console.log(typeof n);
 
   return (
-    <div ref={ref} style={{ backgroundColor: "red" }}>
+    <div ref={ref}>
       <form>
         <input
           type="text"

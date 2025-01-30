@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useRef } from "react";
-import "./style.css";
-import Context from "../context/ThemeContext";
+import "./ParentStyle.css";
+import Context2 from "../context2/ThemeContext2";
 
 function ChildA() {
-  const { bg, changebg } = useContext(Context);
+  const { bg, changebg } = useContext(Context2);
   const ChildARef = useRef();
 
   useEffect(() => {
